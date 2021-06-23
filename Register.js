@@ -54,7 +54,8 @@ document.getElementById("Register").addEventListener('click', e => {
                             studOrTeach: ST,
 
                         }).then(() => {
-                            window.location.href = "Login.html"
+                            if(confirm("You have been successfully registered!!")){
+                                location.href = "Login.html"}
                         });
 
                     })
@@ -89,7 +90,8 @@ document.getElementById("Register").addEventListener('click', e => {
                             Chats: []
                         })
                             .then(e => {
-                                location.href = "Login.html"
+                                if(confirm("You have been successfully registered!!")){
+                                location.href = "Login.html"}
                             });
 
                     })
