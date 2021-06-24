@@ -87,7 +87,6 @@ document.getElementById("Register").addEventListener('click', e => {
                             Subject2: subject2Value,
                             Subject3: subject3Value,
                             studOrTeach: ST,
-                            Chats: []
                         })
                             .then(e => {
                                 if(confirm("You have been successfully registered!!")){
