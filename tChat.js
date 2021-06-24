@@ -12,7 +12,10 @@ if (localStorage.getItem('sOrT') === "student") {
 db.collection('users').doc(uid).get().then((snapshot)=>{
     var Name=snapshot.data().Name
     document.getElementById("tooltiptext").innerHTML=Name+"<br>"+"Teacher"
-  
+  if(snapshot.data().Chats==undefined){
+        //if the user has no ongoing chats-
+        document.getElementById("message").innerHTML="All you ongoing chats will appear here-<br><br><br>You have no ongoing chats."
+    }
     for(var i=0;i<snapshot.data().Chats.length;i++){
         document.getElementById("message").innerHTML="All you ongoing chats will appear here-<br><br><br>"
         db.collection('users').doc(snapshot.data().Chats[i]).get().then(snapshot=>{
