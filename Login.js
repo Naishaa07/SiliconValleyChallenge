@@ -16,7 +16,7 @@ document.getElementById("Loginbtn").addEventListener('click', e => {
         localStorage.setItem('uid', e.user.uid)
 
         db.collection('users').doc(uid).get().then(snapshot => {
-            alert("Hello " + snapshot.data().Name + "!\r\nWelcome to Cracit!!")
+            alert("Hello " + snapshot.data().Name + "!\r\nWelcome to Crackit!!")
             localStorage.setItem("location", snapshot.data().Location)
             location.href = "AfterSignin.html";
         })
