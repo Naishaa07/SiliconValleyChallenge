@@ -54,7 +54,8 @@ document.getElementById("Register").addEventListener('click', e => {
                             Location: location,
                             studOrTeach: ST,
 
-                        }).then(e => {
+                        })
+                            .then(e => {
                             if(confirm("You have been successfully registered!!")){
                                 location.href = "Login.html"}
                         });
