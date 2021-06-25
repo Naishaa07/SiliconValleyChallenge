@@ -56,8 +56,7 @@ var abc = db.collection(collection)
                             if (rMessage !== "") {
                                 document.getElementById("replyinfo" + x).innerHTML += "<div style='background-color:#00adb5; padding:5px; border-radius:10px;margin-bottom:10px;'>"+"<div><p style='font-size:15px;white-space:normal;width:83%;color:#222831;'><b>"
                                 + rMessage + '<b/><p/>' + "<p style='margin-top:-5px; text-align:right; margin-left:5px; margin-right:5px'>"
-                                + rName + "("+rSorT+")" +" "+ rTime +" "+ rDate+ '<p/>'+ "<p style='margin-top:-5px; text-align:right; margin-left:5px; margin-left:5px'>"
-                                + rName + "("+rSorT+")" +" "+ rTime +" "+ rDate+ '<p/><div/>'
+                                + rName + "("+rSorT+")" +" "+ rTime +" "+ rDate+ '<p/>'+  '<p/><div/>'
 
                             }
                         })}
