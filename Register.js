@@ -37,12 +37,11 @@ document.getElementById("Register").addEventListener('click', e => {
     } else {
 
         if (document.getElementById("teacher").checked === false) {
-            
-                    console.log(grade)
             //Registration code if the user is a student
             ST = "student"
             const grade = document.getElementById("grade").value;
             const location = document.getElementById("location").value
+            console.log(grade)
             if (document.getElementById("Name").value == "" || document.getElementById("grade").value == "" || document.getElementById("location").value == "") {
                 alert("Please enter all the fields ")
             } else {
