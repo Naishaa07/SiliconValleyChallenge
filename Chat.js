@@ -46,7 +46,7 @@ document.getElementById('send').addEventListener('click', e => {
         //adding the message sent to the collection of the person the user is contacting
         xyz.set({
             text: text,
-            name: userName,
+            name: Name,
             CreatedAt: date,
             timeStamp: currentdate
         }).then(e => {  
@@ -54,7 +54,7 @@ document.getElementById('send').addEventListener('click', e => {
             db.collection('users').doc(userid).collection(tId).doc().set({
                 //adding the message sent to the collection of the user
                 text: text,
-                name: userName,
+                name: Name,
                 CreatedAt: date,
                 timeStamp: currentdate
             })}
