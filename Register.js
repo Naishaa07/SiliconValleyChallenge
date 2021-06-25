@@ -44,6 +44,7 @@ document.getElementById("Register").addEventListener('click', e => {
             if (document.getElementById("Name").value == "" || document.getElementById("grade").value == "" || document.getElementById("location").value == "") {
                 alert("Please enter all the fields ")
             } else {
+                if(grade>5){
                 const promise = firebase.auth().createUserWithEmailAndPassword(email, password)
                     .then(cred => {
                         //Store the information in the database
@@ -65,7 +66,10 @@ document.getElementById("Register").addEventListener('click', e => {
                     console.log(e.message)
                     alert(e.message);
                 })
-            }
+                }
+            else{
+            alert("You can only register if you are between grades 6-12")
+            }}
         } else {
             //Registration if the user is a teacher
             ST = "teacher"
