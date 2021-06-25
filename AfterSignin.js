@@ -41,7 +41,7 @@ document.getElementById("message").innerHTML="Ask or answer questions of a subje
                     document.getElementById("buttons").innerHTML = " <button id='English' onclick='subject(this.id)'>English</button><br><button id='Mathematics' onclick='subject(this.id)'>Mathematics</button><br><button id='Physics' onclick='subject(this.id)'>Physics</button><br><button id='Chemistry' onclick='subject(this.id)'>Chemistry</button><br><button id='Biology' onclick='subject(this.id)'>Biology</button><br><button id='Regional Language' onclick='subject(this.id)' style='margin-bottom:50px'>Regional Language</button>"
                 }
                 //navbar
-                document.getElementById("navbar").innerHTML = " <li class='active'><a href='AfterSignin.html' id='grades'>Questions</a></li><li><li><a href='YourQuestions.html' id='Chats'>Your Questions</a></li><li><a href='tChat.html' id='Chats'>Chats</a></li>  <li><a href='tChat.html' id='Chats'>Teachers</a></li><li><a href='Community.html' id='Chats'>Community</a></li>"
+                document.getElementById("navbar").innerHTML = " <li class='active'><a href='AfterSignin.html' id='grades'>Questions</a></li><li><li><a href='YourQuestions.html' id='Chats'>Your Questions</a></li><li><a href='tChat.html' id='Chats'>Chats</a></li>  <li><a href='Teacher.html' id='Chats'>Teachers</a></li><li><a href='Community.html' id='Chats'>Community</a></li>"
 
                 }
                 else {
