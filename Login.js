@@ -30,22 +30,27 @@ document.getElementById("Loginbtn").addEventListener('click', e => {
 )
 
 document.getElementById("forgotPassword").addEventListener('click', e => {
-    //In case the user forgot password
+    //In case the user forgets the password
     e.preventDefault();
-    const email = txtEmail.value;
+    var email = txtEmail.value;
+    var auth = firebase.auth()
+    alert(email)
     if (email !== "") {
-        firebase.auth().sendPasswordResetEmail(email).then(function () {
+        
+        auth.sendPasswordResetEmail(email).then(function()
+        {
             alert("Email has been sent to you. Please check.")
         })
-            .catch(function (error) {
-                const errorMessage = error.message
-                const errorCode = error.code
+        .catch(function(e){
+                const errorMessage = e.message
                 alert(errorMessage)
+                console.log(errorMessage)
             })
     } else {
         alert("Please enter your email first")
     }
 })
+
 function show() {
     //Code for viewing typed pasword
     var icon = document.getElementById("icon")
