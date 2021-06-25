@@ -39,9 +39,10 @@ section button{
   }
   #buttons button{
       background-color: #eeeeee;
-     color: #00adb5;
+     color: #0ab9ee;
      border-color: #eee;
      text-align: center;
+     font-family: lemonada;
   }
   #buttons button:hover{
     background-color: black;
