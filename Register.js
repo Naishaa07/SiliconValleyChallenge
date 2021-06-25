@@ -37,6 +37,8 @@ document.getElementById("Register").addEventListener('click', e => {
     } else {
 
         if (document.getElementById("teacher").checked === false) {
+            
+                    console.log(grade)
             //Registration code if the user is a student
             ST = "student"
             const grade = document.getElementById("grade").value;
@@ -58,7 +60,7 @@ document.getElementById("Register").addEventListener('click', e => {
                         })
                             .then(e => {
                             if(confirm("You have been successfully registered!!")){
-                                location.href = "Login.html"}
+                                window.location.href = "Login.html"}
                         });
 
                     })
@@ -96,7 +98,7 @@ document.getElementById("Register").addEventListener('click', e => {
                         })
                             .then(e => {
                                 if(confirm("You have been successfully registered!!")){
-                                location.href = "Login.html"}
+                                window.location.href = "Login.html"}
                             });
 
                     })
