@@ -22,6 +22,7 @@ function subjectChoice() {
 }
 function studentClick() {
     //Code for the student to enter the grade and location
+    document.getElementById("subjects").innerHTML=""
     document.getElementById("Grade1").innerHTML = "<input type='number' class='form-control' id='grade' min='06' max='12' placeholder='Grade'><br><input type='text' class='form-control' id='location' placeholder='Location'>";
 }
 var txtGrade = document.getElementById("grade");
